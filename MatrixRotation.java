@@ -47,7 +47,7 @@ public class MatrixRotation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MatrixRotation mr = new MatrixRotation();
-		mr.matRot(1, 3);
+		mr.matRot(3, 3);
 	}
 
 }

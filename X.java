@@ -1,15 +1,11 @@
 public class X {
-	private static int value;
-
-	public class Y {
-		public void showIt() {
-			System.out.println("Val: " + value);
-			System.out.println("Val: " + getValue());
-			System.out.println("Val: " + X.getValue());
-		}
-	}
-
-	public static int getValue() {
-		return value;
+	public static void main(String args[]) {
+		String str = "DokeNachiketNachiket";
+		int index = str.indexOf("Nach");
+		System.out.println(index);
+		str = str.substring(index + 4, str.length());
+		System.out.println(str);
+		index = str.indexOf("Nach");
+		System.out.println(index);
 	}
 }

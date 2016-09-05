@@ -8,7 +8,7 @@ public class LargestPrime {
 		for (long i = 1; i <= Math.sqrt(n); i++) {
 			if (n % i == 0)
 				count++;
-			if(count > 2)
+			if (count > 2)
 				break;
 		}
 		if (count >= 2)
@@ -25,8 +25,8 @@ public class LargestPrime {
 		sc.close();
 		String temp = Long.toString(num);
 		long limit = 0;
-		for(int i = 0; i < temp.length(); i++){
-			limit += 9*Math.pow(10, i);
+		for (int i = 0; i < temp.length(); i++) {
+			limit += 9 * Math.pow(10, i);
 		}
 		ArrayList<Long> arl = new ArrayList<Long>();
 		for (long i = 2; i < limit; i++) {
@@ -34,8 +34,8 @@ public class LargestPrime {
 				arl.add(i);
 			}
 		}
-		for(int i = arl.size() - 1; i >= 0; i--){
-			if(num % arl.get(i) == 0){
+		for (int i = arl.size() - 1; i >= 0; i--) {
+			if (num % arl.get(i) == 0) {
 				System.out.println(arl.get(i));
 				break;
 			}

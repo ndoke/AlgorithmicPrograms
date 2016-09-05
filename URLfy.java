@@ -24,7 +24,6 @@ public class URLfy {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		URLfy url = new URLfy();
 		System.out.println(url.toURL("My name is Nachiket Doke."));
 		char chr[] = {'a', 'b', 'c'};
